@@ -1,24 +1,25 @@
 package com.blz.array;
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Array {
     public static void main(String[] args){
         System.out.println(" Welcome to array ");
-        System.out.println("Enter the size of arrray ");
-        Scanner sc =new Scanner(System.in);
-        int size = sc.nextInt();
+        System.out.println("Enter the size of aray ");
+        Scanner a =new Scanner(System.in);
+        int size = a.nextInt();
         int ar[] = new int[size];
 
-        System.out.println("Enter 5 elements");
+        System.out.println("Enter" +size+ "elements");
 
 
         for (int i=0; i<ar.length;i++ ){
-            ar[i] = sc.nextInt();
+            ar[i] = a.nextInt();
         }
         System.out.println("Entered values are");
-        for (int i=0;i<ar.length;i++ )
+        for(int b : ar)
         {
-            System.out.println(ar[i]);
+            System.out.println(b);
         }
     }
 }
